@@ -4214,12 +4214,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="VDD">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -4239,19 +4233,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VDD" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="VDD" symbol="VDD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -13047,19 +13028,19 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <clearance class="0" value="0.2032"/>
 </class>
 <class number="1" name="sig" width="0.3048" drill="0.3048">
-<clearance class="1" value="0.254"/>
+<clearance class="1" value="0.2032"/>
 </class>
-<class number="2" name="Power" width="0.508" drill="0.508">
-<clearance class="2" value="0.254"/>
+<class number="2" name="Power" width="0.2032" drill="0.2032">
+<clearance class="2" value="0.2032"/>
 </class>
 <class number="3" name="HighSpeedSig" width="0.1524" drill="0.1524">
-<clearance class="3" value="0.254"/>
+<clearance class="3" value="0.2032"/>
 </class>
 <class number="4" name="StepperOut" width="0.381" drill="0.381">
-<clearance class="4" value="0.254"/>
+<clearance class="4" value="0.2032"/>
 </class>
 <class number="5" name="LowPower" width="0.3048" drill="0.3048">
-<clearance class="5" value="0.254"/>
+<clearance class="5" value="0.2032"/>
 </class>
 </classes>
 <parts>
@@ -13076,13 +13057,10 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="U2" library="microbuilder" deviceset="VREG_SOT23-5" device="" value="AP2112-3.3"/>
 <part name="D4" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR120"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="D3" library="microbuilder" deviceset="LED" device="0805_NOOUTLINE" value="RED"/>
-<part name="R10" library="microbuilder" deviceset="RESISTOR" device="_0603_NOOUT" value="1K"/>
 <part name="Q1" library="SparkFun" deviceset="TRANSISTOR_NPN" device="SOT23-3" value="mmbt2222"/>
 <part name="Q2" library="SparkFun" deviceset="TRANSISTOR_NPN" device="SOT23-3" value="mmbt2222"/>
 <part name="R7" library="microbuilder" deviceset="RESISTOR" device="_0603_NOOUT" value="100K"/>
 <part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10uF"/>
-<part name="U$8" library="microbuilder" deviceset="GND" device=""/>
 <part name="R12" library="microbuilder" deviceset="RESISTOR" device="_0603_NOOUT" value="100K"/>
 <part name="U$25" library="microbuilder" deviceset="GND" device=""/>
 <part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0603_NO" value="1uF"/>
@@ -13148,9 +13126,6 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805-IND" value="3.3uH"/>
-<part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VDD" device=""/>
-<part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C15" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="U$2" library="NewKevinMade" deviceset="S5B-PH-SM4_TB" device=""/>
 <part name="U5" library="Testing" deviceset="HX711" device="HX711" value="HX711"/>
 <part name="Q5" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_PNP" device="MMBT4403" value="MMBT4403"/>
@@ -13180,9 +13155,6 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805-IND" value="3.3uH"/>
-<part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="VDD" device=""/>
-<part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C22" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="WEIGHT_SENSOR" library="NewKevinMade" deviceset="S5B-PH-SM4_TB" device=""/>
 <part name="U6" library="Testing" deviceset="HX711" device="HX711" value="HX711"/>
 <part name="Q6" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_PNP" device="MMBT4403" value="MMBT4403"/>
@@ -13212,9 +13184,6 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L3" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805-IND" value="3.3uH"/>
-<part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="VDD" device=""/>
-<part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="C29" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="U$5" library="NewKevinMade" deviceset="S5B-PH-SM4_TB" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
@@ -13408,7 +13377,6 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="FAN_" library="B2B-PH-SM4-TB_LF__SN_" deviceset="B2B-PH-SM4-TB(LF)(SN)" device=""/>
 <part name="C67" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" package3d_urn="urn:adsk.eagle:package:37420/1" value="100uF"/>
 <part name="C66" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" package3d_urn="urn:adsk.eagle:package:37420/1" value="100uF"/>
-<part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="560UF" device="-PANASONIC_G-25V-20%" package3d_urn="urn:adsk.eagle:package:37427/1" value="560uF"/>
 <part name="C68" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="560UF" device="-PANASONIC_G-25V-20%" package3d_urn="urn:adsk.eagle:package:37427/1" value="560uF"/>
 <part name="C69" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" package3d_urn="urn:adsk.eagle:package:37420/1" value="100uF"/>
 <part name="C70" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" package3d_urn="urn:adsk.eagle:package:37420/1" value="100uF"/>
@@ -13435,7 +13403,6 @@ VBAT SENSE: IO35
 LED: IO13</text>
 <text x="396.24" y="137.16" size="1.778" layer="94">POWER AND FILTERING</text>
 <text x="469.9" y="129.54" size="1.778" layer="94" rot="R90">RESET</text>
-<text x="447.04" y="142.24" size="1.778" layer="94">LED</text>
 <text x="77.978" y="211.582" size="1.778" layer="97">VBG = 1.25V</text>
 <text x="8.382" y="205.486" size="1.778" layer="97">AVDD = VBG(R1+R2)/R2</text>
 <text x="137.16" y="200.66" size="1.778" layer="97">Default: Closed - Data rate set to 10SPS</text>
@@ -13615,14 +13582,6 @@ Need to tie Pin#8 and #9</text>
 <instance part="GND6" gate="1" x="477.52" y="104.14" smashed="yes">
 <attribute name="VALUE" x="474.98" y="101.6" size="1.778" layer="96"/>
 </instance>
-<instance part="D3" gate="G$1" x="449.58" y="127" smashed="yes" rot="R90">
-<attribute name="NAME" x="445.135" y="125.73" size="1.27" layer="95" rot="R90" align="center"/>
-<attribute name="VALUE" x="452.374" y="125.73" size="1.27" layer="96" rot="R90" align="center"/>
-</instance>
-<instance part="R10" gate="G$1" x="449.58" y="116.84" smashed="yes" rot="R90">
-<attribute name="NAME" x="447.04" y="116.84" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
-<attribute name="VALUE" x="449.58" y="116.84" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
-</instance>
 <instance part="Q1" gate="G$1" x="332.74" y="38.1" smashed="yes" rot="MR180">
 <attribute name="NAME" x="337.82" y="38.1" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="337.82" y="40.64" size="1.778" layer="96" rot="MR180"/>
@@ -13638,9 +13597,6 @@ Need to tie Pin#8 and #9</text>
 <instance part="C1" gate="G$1" x="431.8" y="109.22" smashed="yes">
 <attribute name="NAME" x="429.51" y="110.47" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="434.1" y="110.47" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
-</instance>
-<instance part="U$8" gate="G$1" x="452.12" y="134.62" smashed="yes" rot="R90">
-<attribute name="VALUE" x="454.66" y="133.096" size="1.27" layer="96" rot="R90"/>
 </instance>
 <instance part="R12" gate="G$1" x="363.22" y="114.3" smashed="yes" rot="R90">
 <attribute name="VALUE" x="363.22" y="114.3" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
@@ -13863,16 +13819,6 @@ Need to tie Pin#8 and #9</text>
 <attribute name="NAME" x="48.26" y="203.2" size="1.778" layer="95"/>
 <attribute name="VALUE" x="48.26" y="195.58" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY9" gate="VDD" x="33.02" y="228.6" smashed="yes">
-<attribute name="VALUE" x="32.004" y="232.156" size="1.778" layer="96"/>
-</instance>
-<instance part="GND11" gate="1" x="33.02" y="213.36" smashed="yes">
-<attribute name="VALUE" x="30.48" y="210.82" size="1.778" layer="96"/>
-</instance>
-<instance part="C15" gate="G$1" x="33.02" y="220.98" smashed="yes">
-<attribute name="NAME" x="34.544" y="223.901" size="1.778" layer="95"/>
-<attribute name="VALUE" x="34.544" y="218.821" size="1.778" layer="96"/>
-</instance>
 <instance part="U$2" gate="G$1" x="5.08" y="177.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="2.54" y="203.708" size="1.778" layer="95" rot="MR0"/>
 </instance>
@@ -13975,16 +13921,6 @@ Need to tie Pin#8 and #9</text>
 <attribute name="NAME" x="50.8" y="294.64" size="1.778" layer="95"/>
 <attribute name="VALUE" x="50.8" y="287.02" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY12" gate="VDD" x="35.56" y="320.04" smashed="yes">
-<attribute name="VALUE" x="34.544" y="323.596" size="1.778" layer="96"/>
-</instance>
-<instance part="GND19" gate="1" x="35.56" y="304.8" smashed="yes">
-<attribute name="VALUE" x="33.02" y="302.26" size="1.778" layer="96"/>
-</instance>
-<instance part="C22" gate="G$1" x="35.56" y="312.42" smashed="yes">
-<attribute name="NAME" x="37.084" y="315.341" size="1.778" layer="95"/>
-<attribute name="VALUE" x="37.084" y="310.261" size="1.778" layer="96"/>
-</instance>
 <instance part="WEIGHT_SENSOR" gate="G$1" x="7.62" y="269.24" smashed="yes" rot="MR0">
 <attribute name="NAME" x="5.08" y="295.148" size="1.778" layer="95" rot="MR0"/>
 </instance>
@@ -14086,16 +14022,6 @@ Need to tie Pin#8 and #9</text>
 <instance part="L3" gate="G$1" x="66.04" y="386.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="58.42" y="388.62" size="1.778" layer="95"/>
 <attribute name="VALUE" x="58.42" y="381" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY18" gate="VDD" x="43.18" y="414.02" smashed="yes">
-<attribute name="VALUE" x="42.164" y="417.576" size="1.778" layer="96"/>
-</instance>
-<instance part="GND28" gate="1" x="43.18" y="398.78" smashed="yes">
-<attribute name="VALUE" x="40.64" y="396.24" size="1.778" layer="96"/>
-</instance>
-<instance part="C29" gate="G$1" x="43.18" y="406.4" smashed="yes">
-<attribute name="NAME" x="44.704" y="409.321" size="1.778" layer="95"/>
-<attribute name="VALUE" x="44.704" y="404.241" size="1.778" layer="96"/>
 </instance>
 <instance part="U$5" gate="G$1" x="15.24" y="363.22" smashed="yes" rot="MR0">
 <attribute name="NAME" x="12.7" y="389.128" size="1.778" layer="95" rot="MR0"/>
@@ -14802,13 +14728,9 @@ Need to tie Pin#8 and #9</text>
 <attribute name="NAME" x="39.116" y="79.375" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="39.116" y="74.549" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C3" gate="G$1" x="556.26" y="157.48" smashed="yes">
+<instance part="C68" gate="G$1" x="556.26" y="157.48" smashed="yes">
 <attribute name="NAME" x="557.276" y="158.115" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="557.276" y="153.289" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="C68" gate="G$1" x="563.88" y="157.48" smashed="yes">
-<attribute name="NAME" x="564.896" y="158.115" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="564.896" y="153.289" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="C69" gate="G$1" x="335.28" y="195.58" smashed="yes">
 <attribute name="NAME" x="336.296" y="196.215" size="1.778" layer="95" font="vector"/>
@@ -14893,11 +14815,6 @@ Need to tie Pin#8 and #9</text>
 <wire x1="474.98" y1="109.22" x2="474.98" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="474.98" y1="106.68" x2="477.52" y2="106.68" width="0.1524" layer="91"/>
 <junction x="477.52" y="106.68"/>
-</segment>
-<segment>
-<pinref part="U$8" gate="G$1" pin="GND"/>
-<pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="449.58" y1="129.54" x2="449.58" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$25" gate="G$1" pin="GND"/>
@@ -15058,11 +14975,6 @@ Need to tie Pin#8 and #9</text>
 <wire x1="30.48" y1="190.5" x2="30.48" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="33.02" y1="215.9" x2="33.02" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="129.54" y1="281.94" x2="129.54" y2="279.4" width="0.1524" layer="91"/>
 <pinref part="U5" gate="U1" pin="XI"/>
@@ -15118,11 +15030,6 @@ Need to tie Pin#8 and #9</text>
 <wire x1="33.02" y1="281.94" x2="33.02" y2="279.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND19" gate="1" pin="GND"/>
-<wire x1="35.56" y1="307.34" x2="35.56" y2="309.88" width="0.1524" layer="91"/>
-<pinref part="C22" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="137.16" y1="375.92" x2="137.16" y2="373.38" width="0.1524" layer="91"/>
 <pinref part="U6" gate="U1" pin="XI"/>
@@ -15176,11 +15083,6 @@ Need to tie Pin#8 and #9</text>
 <pinref part="C28" gate="G$1" pin="2"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 <wire x1="40.64" y1="375.92" x2="40.64" y2="373.38" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND28" gate="1" pin="GND"/>
-<wire x1="43.18" y1="401.32" x2="43.18" y2="403.86" width="0.1524" layer="91"/>
-<pinref part="C29" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="223.52" y1="196.85" x2="223.52" y2="193.04" width="0.1524" layer="91"/>
@@ -15588,11 +15490,8 @@ Need to tie Pin#8 and #9</text>
 <segment>
 <pinref part="Q4" gate="G$1" pin="G"/>
 <wire x1="548.64" y1="154.94" x2="548.64" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="-"/>
-<wire x1="548.64" y1="152.4" x2="556.26" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="C68" gate="G$1" pin="-"/>
-<wire x1="556.26" y1="152.4" x2="563.88" y2="152.4" width="0.1524" layer="91"/>
-<junction x="556.26" y="152.4"/>
+<wire x1="548.64" y1="152.4" x2="556.26" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U$57" gate="G$1" pin="GND"/>
 <wire x1="548.64" y1="152.4" x2="548.64" y2="149.86" width="0.1524" layer="91"/>
 <junction x="548.64" y="152.4"/>
@@ -15851,11 +15750,6 @@ Need to tie Pin#8 and #9</text>
 <wire x1="284.48" y1="71.12" x2="297.18" y2="71.12" width="0.1524" layer="91"/>
 <label x="287.02" y="71.12" size="1.778" layer="95"/>
 <pinref part="X2" gate="G$1" pin="IO14/A2_6"/>
-</segment>
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="449.58" y1="111.76" x2="449.58" y2="101.6" width="0.1524" layer="91"/>
-<label x="449.58" y="104.14" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="VCC" class="5">
@@ -16194,12 +16088,6 @@ Need to tie Pin#8 and #9</text>
 <junction x="378.46" y="121.92"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="D3" gate="G$1" pin="A"/>
-</segment>
-</net>
 <net name="PWM1" class="0">
 <segment>
 <label x="589.28" y="121.92" size="1.778" layer="95"/>
@@ -16531,14 +16419,11 @@ Need to tie Pin#8 and #9</text>
 <net name="5V_SERVO" class="2">
 <segment>
 <pinref part="Q4" gate="G$1" pin="S"/>
-<wire x1="551.18" y1="160.02" x2="556.26" y2="160.02" width="0.1524" layer="91"/>
 <label x="571.5" y="160.02" size="1.778" layer="95" xref="yes"/>
-<pinref part="C3" gate="G$1" pin="+"/>
-<wire x1="556.26" y1="160.02" x2="563.88" y2="160.02" width="0.1524" layer="91"/>
-<junction x="556.26" y="160.02"/>
+<wire x1="551.18" y1="160.02" x2="556.26" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="C68" gate="G$1" pin="+"/>
-<wire x1="563.88" y1="160.02" x2="571.5" y2="160.02" width="0.1524" layer="91"/>
-<junction x="563.88" y="160.02"/>
+<wire x1="556.26" y1="160.02" x2="571.5" y2="160.02" width="0.1524" layer="91"/>
+<junction x="556.26" y="160.02"/>
 </segment>
 <segment>
 <pinref part="SERVO1" gate="G$1" pin="JST2"/>
@@ -16713,23 +16598,6 @@ Need to tie Pin#8 and #9</text>
 <wire x1="30.48" y1="378.46" x2="15.24" y2="378.46" width="0.1524" layer="91"/>
 <label x="22.86" y="378.46" size="1.778" layer="95"/>
 <pinref part="U$5" gate="G$1" pin="JST4"/>
-</segment>
-</net>
-<net name="VDD" class="5">
-<segment>
-<pinref part="SUPPLY9" gate="VDD" pin="VDD"/>
-<wire x1="33.02" y1="228.6" x2="33.02" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="SUPPLY12" gate="VDD" pin="VDD"/>
-<wire x1="35.56" y1="320.04" x2="35.56" y2="317.5" width="0.1524" layer="91"/>
-<pinref part="C22" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="SUPPLY18" gate="VDD" pin="VDD"/>
-<wire x1="43.18" y1="414.02" x2="43.18" y2="411.48" width="0.1524" layer="91"/>
-<pinref part="C29" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AVDD_3" class="0">
@@ -17108,18 +16976,28 @@ Need to tie Pin#8 and #9</text>
 <wire x1="260.35" y1="157.48" x2="270.51" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MS2_1" class="0">
+<net name="MS2_SOLID" class="0">
 <segment>
 <pinref part="IC1" gate="IC" pin="MS2"/>
 <wire x1="270.51" y1="167.64" x2="261.62" y2="167.64" width="0.1524" layer="91"/>
 <label x="261.62" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="IC" pin="MS2"/>
+<wire x1="270.51" y1="264.16" x2="261.62" y2="264.16" width="0.1524" layer="91"/>
+<label x="261.62" y="264.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
-<net name="MS1_1" class="0">
+<net name="MS1_SOLID" class="0">
 <segment>
 <pinref part="IC1" gate="IC" pin="MS1"/>
 <wire x1="270.51" y1="170.18" x2="261.62" y2="170.18" width="0.1524" layer="91"/>
 <label x="261.62" y="170.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="IC" pin="MS1"/>
+<wire x1="270.51" y1="266.7" x2="261.62" y2="266.7" width="0.1524" layer="91"/>
+<label x="261.62" y="266.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DIR_1" class="0">
@@ -17136,11 +17014,24 @@ Need to tie Pin#8 and #9</text>
 <pinref part="IC1" gate="IC" pin="STEP"/>
 </segment>
 </net>
-<net name="EN_1" class="0">
+<net name="EN_XY" class="0">
 <segment>
 <pinref part="IC1" gate="IC" pin="ENN"/>
 <pinref part="R33" gate="R" pin="2"/>
-<wire x1="270.51" y1="190.5" x2="260.35" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="270.51" y1="190.5" x2="266.7" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="190.5" x2="260.35" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="208.28" x2="266.7" y2="190.5" width="0.1524" layer="91"/>
+<junction x="266.7" y="190.5"/>
+<label x="266.7" y="208.28" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="IC" pin="ENN"/>
+<pinref part="R40" gate="R" pin="2"/>
+<wire x1="270.51" y1="287.02" x2="266.7" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="287.02" x2="260.35" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="287.02" x2="266.7" y2="304.8" width="0.1524" layer="91"/>
+<junction x="266.7" y="287.02"/>
+<label x="266.7" y="304.8" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="TRI_5V_1" class="0">
@@ -17241,27 +17132,6 @@ Need to tie Pin#8 and #9</text>
 <pinref part="IC2" gate="IC" pin="PDN_UART"/>
 <pinref part="R39" gate="R" pin="2"/>
 <wire x1="260.35" y1="254" x2="270.51" y2="254" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="EN_2" class="0">
-<segment>
-<pinref part="IC2" gate="IC" pin="ENN"/>
-<pinref part="R40" gate="R" pin="2"/>
-<wire x1="270.51" y1="287.02" x2="260.35" y2="287.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MS2_2" class="0">
-<segment>
-<pinref part="IC2" gate="IC" pin="MS2"/>
-<wire x1="270.51" y1="264.16" x2="261.62" y2="264.16" width="0.1524" layer="91"/>
-<label x="261.62" y="264.16" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="MS1_2" class="0">
-<segment>
-<pinref part="IC2" gate="IC" pin="MS1"/>
-<wire x1="270.51" y1="266.7" x2="261.62" y2="266.7" width="0.1524" layer="91"/>
-<label x="261.62" y="266.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DIR_2" class="0">
@@ -17394,11 +17264,15 @@ Need to tie Pin#8 and #9</text>
 <wire x1="260.35" y1="350.52" x2="270.51" y2="350.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="EN_3" class="0">
+<net name="EN_LIQUID_1" class="0">
 <segment>
 <pinref part="IC3" gate="IC" pin="ENN"/>
 <pinref part="R47" gate="R" pin="2"/>
-<wire x1="270.51" y1="383.54" x2="260.35" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="270.51" y1="383.54" x2="266.7" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="383.54" x2="260.35" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="383.54" x2="266.7" y2="401.32" width="0.1524" layer="91"/>
+<junction x="266.7" y="383.54"/>
+<label x="266.7" y="401.32" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="VCP3" class="0">
@@ -17469,11 +17343,15 @@ Need to tie Pin#8 and #9</text>
 <wire x1="412.75" y1="254" x2="422.91" y2="254" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="EN_4" class="0">
+<net name="EN_LIQUID_3" class="0">
 <segment>
 <pinref part="IC4" gate="IC" pin="ENN"/>
 <pinref part="R54" gate="R" pin="2"/>
-<wire x1="422.91" y1="287.02" x2="412.75" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="422.91" y1="287.02" x2="419.1" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="287.02" x2="412.75" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="287.02" x2="419.1" y2="304.8" width="0.1524" layer="91"/>
+<junction x="419.1" y="287.02"/>
+<label x="419.1" y="304.8" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="VCP4" class="0">
@@ -17544,11 +17422,15 @@ Need to tie Pin#8 and #9</text>
 <wire x1="412.75" y1="350.52" x2="422.91" y2="350.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="EN_5" class="0">
+<net name="EN_LIQUID_2" class="0">
 <segment>
 <pinref part="IC5" gate="IC" pin="ENN"/>
 <pinref part="R61" gate="R" pin="2"/>
-<wire x1="422.91" y1="383.54" x2="412.75" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="422.91" y1="383.54" x2="419.1" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="383.54" x2="412.75" y2="383.54" width="0.1524" layer="91"/>
+<wire x1="419.1" y1="383.54" x2="419.1" y2="401.32" width="0.1524" layer="91"/>
+<junction x="419.1" y="383.54"/>
+<label x="419.1" y="401.32" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="TRI_5V_3" class="0">
@@ -17567,32 +17449,38 @@ Need to tie Pin#8 and #9</text>
 <junction x="259.08" y="393.7"/>
 </segment>
 </net>
-<net name="MS2_3" class="0">
-<segment>
-<pinref part="IC3" gate="IC" pin="MS2"/>
-<wire x1="270.51" y1="360.68" x2="261.62" y2="360.68" width="0.1524" layer="91"/>
-<label x="261.62" y="360.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="MS1_3" class="0">
-<segment>
-<pinref part="IC3" gate="IC" pin="MS1"/>
-<wire x1="270.51" y1="363.22" x2="261.62" y2="363.22" width="0.1524" layer="91"/>
-<label x="261.62" y="363.22" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="DIR_3" class="0">
+<net name="DIR_LIQUID" class="0">
 <segment>
 <wire x1="270.51" y1="375.92" x2="261.62" y2="375.92" width="0.1524" layer="91"/>
 <label x="261.62" y="375.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="IC3" gate="IC" pin="DIR"/>
 </segment>
+<segment>
+<wire x1="422.91" y1="375.92" x2="414.02" y2="375.92" width="0.1524" layer="91"/>
+<label x="414.02" y="375.92" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC5" gate="IC" pin="DIR"/>
+</segment>
+<segment>
+<wire x1="422.91" y1="279.4" x2="414.02" y2="279.4" width="0.1524" layer="91"/>
+<label x="414.02" y="279.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC4" gate="IC" pin="DIR"/>
+</segment>
 </net>
-<net name="STEP_3" class="3">
+<net name="STEP_LIQUID" class="3">
 <segment>
 <wire x1="270.51" y1="378.46" x2="261.62" y2="378.46" width="0.1524" layer="91"/>
 <label x="261.62" y="378.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="IC3" gate="IC" pin="STEP"/>
+</segment>
+<segment>
+<wire x1="422.91" y1="378.46" x2="414.02" y2="378.46" width="0.1524" layer="91"/>
+<label x="414.02" y="378.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC5" gate="IC" pin="STEP"/>
+</segment>
+<segment>
+<wire x1="422.91" y1="281.94" x2="414.02" y2="281.94" width="0.1524" layer="91"/>
+<label x="414.02" y="281.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC4" gate="IC" pin="STEP"/>
 </segment>
 </net>
 <net name="OA1_3" class="4">
@@ -17659,34 +17547,6 @@ Need to tie Pin#8 and #9</text>
 <junction x="411.48" y="297.18"/>
 </segment>
 </net>
-<net name="MS2_4" class="0">
-<segment>
-<pinref part="IC4" gate="IC" pin="MS2"/>
-<wire x1="422.91" y1="264.16" x2="414.02" y2="264.16" width="0.1524" layer="91"/>
-<label x="414.02" y="264.16" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="MS1_4" class="0">
-<segment>
-<pinref part="IC4" gate="IC" pin="MS1"/>
-<wire x1="422.91" y1="266.7" x2="414.02" y2="266.7" width="0.1524" layer="91"/>
-<label x="414.02" y="266.7" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="DIR_4" class="0">
-<segment>
-<wire x1="422.91" y1="279.4" x2="414.02" y2="279.4" width="0.1524" layer="91"/>
-<label x="414.02" y="279.4" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC4" gate="IC" pin="DIR"/>
-</segment>
-</net>
-<net name="STEP_4" class="3">
-<segment>
-<wire x1="422.91" y1="281.94" x2="414.02" y2="281.94" width="0.1524" layer="91"/>
-<label x="414.02" y="281.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC4" gate="IC" pin="STEP"/>
-</segment>
-</net>
 <net name="OB2_4" class="4">
 <segment>
 <wire x1="463.55" y1="261.62" x2="471.17" y2="261.62" width="0.1524" layer="91"/>
@@ -17751,32 +17611,38 @@ Need to tie Pin#8 and #9</text>
 <junction x="411.48" y="393.7"/>
 </segment>
 </net>
-<net name="MS2_5" class="0">
+<net name="MS2_LIQUID" class="0">
 <segment>
 <pinref part="IC5" gate="IC" pin="MS2"/>
 <wire x1="422.91" y1="360.68" x2="414.02" y2="360.68" width="0.1524" layer="91"/>
 <label x="414.02" y="360.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="IC" pin="MS2"/>
+<wire x1="422.91" y1="264.16" x2="414.02" y2="264.16" width="0.1524" layer="91"/>
+<label x="414.02" y="264.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="IC" pin="MS2"/>
+<wire x1="270.51" y1="360.68" x2="261.62" y2="360.68" width="0.1524" layer="91"/>
+<label x="261.62" y="360.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
-<net name="MS1_5" class="0">
+<net name="MS1_LIQUID" class="0">
 <segment>
 <pinref part="IC5" gate="IC" pin="MS1"/>
 <wire x1="422.91" y1="363.22" x2="414.02" y2="363.22" width="0.1524" layer="91"/>
 <label x="414.02" y="363.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="DIR_5" class="0">
 <segment>
-<wire x1="422.91" y1="375.92" x2="414.02" y2="375.92" width="0.1524" layer="91"/>
-<label x="414.02" y="375.92" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC5" gate="IC" pin="DIR"/>
+<pinref part="IC4" gate="IC" pin="MS1"/>
+<wire x1="422.91" y1="266.7" x2="414.02" y2="266.7" width="0.1524" layer="91"/>
+<label x="414.02" y="266.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="STEP_5" class="3">
 <segment>
-<wire x1="422.91" y1="378.46" x2="414.02" y2="378.46" width="0.1524" layer="91"/>
-<label x="414.02" y="378.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC5" gate="IC" pin="STEP"/>
+<pinref part="IC3" gate="IC" pin="MS1"/>
+<wire x1="270.51" y1="363.22" x2="261.62" y2="363.22" width="0.1524" layer="91"/>
+<label x="261.62" y="363.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="OB2_5" class="4">
