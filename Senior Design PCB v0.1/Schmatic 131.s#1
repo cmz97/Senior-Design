@@ -13126,7 +13126,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805-IND" value="3.3uH"/>
-<part name="WEIGHT3" library="NewKevinMade" deviceset="S5B-PH-SM4_TB" device=""/>
+<part name="U$2" library="NewKevinMade" deviceset="S5B-PH-SM4_TB" device=""/>
 <part name="U5" library="Testing" deviceset="HX711" device="HX711" value="HX711"/>
 <part name="Q5" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_PNP" device="MMBT4403" value="MMBT4403"/>
 <part name="R17" library="SparkFun-Resistors" deviceset="100OHM-1/10W-1%(0603)" device="" value="100"/>
@@ -13155,7 +13155,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805-IND" value="3.3uH"/>
-<part name="WEIGHT2" library="NewKevinMade" deviceset="S5B-PH-SM4_TB" device=""/>
+<part name="WEIGHT_SENSOR" library="NewKevinMade" deviceset="S5B-PH-SM4_TB" device=""/>
 <part name="U6" library="Testing" deviceset="HX711" device="HX711" value="HX711"/>
 <part name="Q6" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_PNP" device="MMBT4403" value="MMBT4403"/>
 <part name="R22" library="SparkFun-Resistors" deviceset="100OHM-1/10W-1%(0603)" device="" value="100"/>
@@ -13184,7 +13184,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L3" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805-IND" value="3.3uH"/>
-<part name="WEIGHT1" library="NewKevinMade" deviceset="S5B-PH-SM4_TB" device=""/>
+<part name="U$5" library="NewKevinMade" deviceset="S5B-PH-SM4_TB" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="R27" library="rcl" deviceset="R-EU_" device="M0805" value="R0805/0R11"/>
@@ -13377,6 +13377,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="FAN_" library="B2B-PH-SM4-TB_LF__SN_" deviceset="B2B-PH-SM4-TB(LF)(SN)" device=""/>
 <part name="C67" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" package3d_urn="urn:adsk.eagle:package:37420/1" value="100uF"/>
 <part name="C66" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" package3d_urn="urn:adsk.eagle:package:37420/1" value="100uF"/>
+<part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="560UF" device="-PANASONIC_G-25V-20%" package3d_urn="urn:adsk.eagle:package:37427/1" value="560uF"/>
 <part name="C68" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="560UF" device="-PANASONIC_G-25V-20%" package3d_urn="urn:adsk.eagle:package:37427/1" value="560uF"/>
 <part name="C69" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" package3d_urn="urn:adsk.eagle:package:37420/1" value="100uF"/>
 <part name="C70" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="100UF-POLAR" device="-25V-20%(ELEC)" package3d_urn="urn:adsk.eagle:package:37420/1" value="100uF"/>
@@ -13819,7 +13820,7 @@ Need to tie Pin#8 and #9</text>
 <attribute name="NAME" x="48.26" y="203.2" size="1.778" layer="95"/>
 <attribute name="VALUE" x="48.26" y="195.58" size="1.778" layer="96"/>
 </instance>
-<instance part="WEIGHT3" gate="G$1" x="5.08" y="177.8" smashed="yes" rot="MR0">
+<instance part="U$2" gate="G$1" x="5.08" y="177.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="2.54" y="203.708" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="U5" gate="U1" x="111.76" y="274.32" smashed="yes">
@@ -13921,7 +13922,7 @@ Need to tie Pin#8 and #9</text>
 <attribute name="NAME" x="50.8" y="294.64" size="1.778" layer="95"/>
 <attribute name="VALUE" x="50.8" y="287.02" size="1.778" layer="96"/>
 </instance>
-<instance part="WEIGHT2" gate="G$1" x="7.62" y="269.24" smashed="yes" rot="MR0">
+<instance part="WEIGHT_SENSOR" gate="G$1" x="7.62" y="269.24" smashed="yes" rot="MR0">
 <attribute name="NAME" x="5.08" y="295.148" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="U6" gate="U1" x="119.38" y="368.3" smashed="yes">
@@ -14023,7 +14024,7 @@ Need to tie Pin#8 and #9</text>
 <attribute name="NAME" x="58.42" y="388.62" size="1.778" layer="95"/>
 <attribute name="VALUE" x="58.42" y="381" size="1.778" layer="96"/>
 </instance>
-<instance part="WEIGHT1" gate="G$1" x="15.24" y="363.22" smashed="yes" rot="MR0">
+<instance part="U$5" gate="G$1" x="15.24" y="363.22" smashed="yes" rot="MR0">
 <attribute name="NAME" x="12.7" y="389.128" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="GND31" gate="1" x="223.52" y="190.5" smashed="yes">
@@ -14728,9 +14729,13 @@ Need to tie Pin#8 and #9</text>
 <attribute name="NAME" x="39.116" y="79.375" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="39.116" y="74.549" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C68" gate="G$1" x="556.26" y="157.48" smashed="yes">
+<instance part="C3" gate="G$1" x="556.26" y="157.48" smashed="yes">
 <attribute name="NAME" x="557.276" y="158.115" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="557.276" y="153.289" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C68" gate="G$1" x="563.88" y="157.48" smashed="yes">
+<attribute name="NAME" x="564.896" y="158.115" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="564.896" y="153.289" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="C69" gate="G$1" x="335.28" y="195.58" smashed="yes">
 <attribute name="NAME" x="336.296" y="196.215" size="1.778" layer="95" font="vector"/>
@@ -14937,8 +14942,8 @@ Need to tie Pin#8 and #9</text>
 <wire x1="10.16" y1="190.5" x2="10.16" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="190.5" x2="10.16" y2="190.5" width="0.1524" layer="91"/>
 <junction x="10.16" y="190.5"/>
-<pinref part="WEIGHT3" gate="G$1" pin="JST2"/>
-<pinref part="WEIGHT3" gate="G$1" pin="JST5"/>
+<pinref part="U$2" gate="G$1" pin="JST2"/>
+<pinref part="U$2" gate="G$1" pin="JST5"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="2"/>
@@ -14992,8 +14997,8 @@ Need to tie Pin#8 and #9</text>
 <wire x1="12.7" y1="281.94" x2="12.7" y2="279.4" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="281.94" x2="12.7" y2="281.94" width="0.1524" layer="91"/>
 <junction x="12.7" y="281.94"/>
-<pinref part="WEIGHT2" gate="G$1" pin="JST2"/>
-<pinref part="WEIGHT2" gate="G$1" pin="JST5"/>
+<pinref part="WEIGHT_SENSOR" gate="G$1" pin="JST2"/>
+<pinref part="WEIGHT_SENSOR" gate="G$1" pin="JST5"/>
 </segment>
 <segment>
 <pinref part="C17" gate="G$1" pin="2"/>
@@ -15047,8 +15052,8 @@ Need to tie Pin#8 and #9</text>
 <wire x1="20.32" y1="375.92" x2="20.32" y2="373.38" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="375.92" x2="20.32" y2="375.92" width="0.1524" layer="91"/>
 <junction x="20.32" y="375.92"/>
-<pinref part="WEIGHT1" gate="G$1" pin="JST2"/>
-<pinref part="WEIGHT1" gate="G$1" pin="JST5"/>
+<pinref part="U$5" gate="G$1" pin="JST2"/>
+<pinref part="U$5" gate="G$1" pin="JST5"/>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="2"/>
@@ -15490,8 +15495,11 @@ Need to tie Pin#8 and #9</text>
 <segment>
 <pinref part="Q4" gate="G$1" pin="G"/>
 <wire x1="548.64" y1="154.94" x2="548.64" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="C68" gate="G$1" pin="-"/>
+<pinref part="C3" gate="G$1" pin="-"/>
 <wire x1="548.64" y1="152.4" x2="556.26" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="C68" gate="G$1" pin="-"/>
+<wire x1="556.26" y1="152.4" x2="563.88" y2="152.4" width="0.1524" layer="91"/>
+<junction x="556.26" y="152.4"/>
 <pinref part="U$57" gate="G$1" pin="GND"/>
 <wire x1="548.64" y1="152.4" x2="548.64" y2="149.86" width="0.1524" layer="91"/>
 <junction x="548.64" y="152.4"/>
@@ -16419,11 +16427,14 @@ Need to tie Pin#8 and #9</text>
 <net name="5V_SERVO" class="2">
 <segment>
 <pinref part="Q4" gate="G$1" pin="S"/>
-<label x="571.5" y="160.02" size="1.778" layer="95" xref="yes"/>
 <wire x1="551.18" y1="160.02" x2="556.26" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="C68" gate="G$1" pin="+"/>
-<wire x1="556.26" y1="160.02" x2="571.5" y2="160.02" width="0.1524" layer="91"/>
+<label x="571.5" y="160.02" size="1.778" layer="95" xref="yes"/>
+<pinref part="C3" gate="G$1" pin="+"/>
+<wire x1="556.26" y1="160.02" x2="563.88" y2="160.02" width="0.1524" layer="91"/>
 <junction x="556.26" y="160.02"/>
+<pinref part="C68" gate="G$1" pin="+"/>
+<wire x1="563.88" y1="160.02" x2="571.5" y2="160.02" width="0.1524" layer="91"/>
+<junction x="563.88" y="160.02"/>
 </segment>
 <segment>
 <pinref part="SERVO1" gate="G$1" pin="JST2"/>
@@ -16587,7 +16598,7 @@ Need to tie Pin#8 and #9</text>
 <wire x1="33.02" y1="381" x2="15.24" y2="381" width="0.1524" layer="91"/>
 <label x="22.86" y="381" size="1.778" layer="95"/>
 <pinref part="R22" gate="G$1" pin="1"/>
-<pinref part="WEIGHT1" gate="G$1" pin="JST3"/>
+<pinref part="U$5" gate="G$1" pin="JST3"/>
 </segment>
 </net>
 <net name="A+_3" class="0">
@@ -16597,7 +16608,7 @@ Need to tie Pin#8 and #9</text>
 <wire x1="30.48" y1="332.74" x2="30.48" y2="378.46" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="378.46" x2="15.24" y2="378.46" width="0.1524" layer="91"/>
 <label x="22.86" y="378.46" size="1.778" layer="95"/>
-<pinref part="WEIGHT1" gate="G$1" pin="JST4"/>
+<pinref part="U$5" gate="G$1" pin="JST4"/>
 </segment>
 </net>
 <net name="AVDD_3" class="0">
@@ -16613,7 +16624,7 @@ Need to tie Pin#8 and #9</text>
 <junction x="50.8" y="386.08"/>
 <pinref part="L3" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="386.08" x2="58.42" y2="386.08" width="0.2032" layer="91"/>
-<pinref part="WEIGHT1" gate="G$1" pin="JST1"/>
+<pinref part="U$5" gate="G$1" pin="JST1"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -18064,7 +18075,7 @@ Need to tie Pin#8 and #9</text>
 <wire x1="20.32" y1="147.32" x2="20.32" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="193.04" x2="5.08" y2="193.04" width="0.1524" layer="91"/>
 <label x="12.7" y="193.04" size="1.778" layer="95"/>
-<pinref part="WEIGHT3" gate="G$1" pin="JST4"/>
+<pinref part="U$2" gate="G$1" pin="JST4"/>
 </segment>
 </net>
 <net name="A-_1" class="0">
@@ -18074,7 +18085,7 @@ Need to tie Pin#8 and #9</text>
 <wire x1="22.86" y1="195.58" x2="5.08" y2="195.58" width="0.1524" layer="91"/>
 <label x="12.7" y="195.58" size="1.778" layer="95"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="WEIGHT3" gate="G$1" pin="JST3"/>
+<pinref part="U$2" gate="G$1" pin="JST3"/>
 </segment>
 </net>
 <net name="AVDD_1" class="0">
@@ -18090,7 +18101,7 @@ Need to tie Pin#8 and #9</text>
 <junction x="40.64" y="200.66"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="200.66" x2="48.26" y2="200.66" width="0.2032" layer="91"/>
-<pinref part="WEIGHT3" gate="G$1" pin="JST1"/>
+<pinref part="U$2" gate="G$1" pin="JST1"/>
 </segment>
 </net>
 <net name="A+_2" class="0">
@@ -18100,7 +18111,7 @@ Need to tie Pin#8 and #9</text>
 <wire x1="22.86" y1="238.76" x2="22.86" y2="284.48" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="284.48" x2="7.62" y2="284.48" width="0.1524" layer="91"/>
 <label x="15.24" y="284.48" size="1.778" layer="95"/>
-<pinref part="WEIGHT2" gate="G$1" pin="JST4"/>
+<pinref part="WEIGHT_SENSOR" gate="G$1" pin="JST4"/>
 </segment>
 </net>
 <net name="A-_2" class="0">
@@ -18110,7 +18121,7 @@ Need to tie Pin#8 and #9</text>
 <wire x1="25.4" y1="287.02" x2="7.62" y2="287.02" width="0.1524" layer="91"/>
 <label x="15.24" y="287.02" size="1.778" layer="95"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="WEIGHT2" gate="G$1" pin="JST3"/>
+<pinref part="WEIGHT_SENSOR" gate="G$1" pin="JST3"/>
 </segment>
 </net>
 <net name="AVDD_2" class="0">
@@ -18126,7 +18137,7 @@ Need to tie Pin#8 and #9</text>
 <junction x="43.18" y="292.1"/>
 <pinref part="L2" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="292.1" x2="50.8" y2="292.1" width="0.2032" layer="91"/>
-<pinref part="WEIGHT2" gate="G$1" pin="JST1"/>
+<pinref part="WEIGHT_SENSOR" gate="G$1" pin="JST1"/>
 </segment>
 </net>
 <net name="N$54" class="0">
