@@ -19774,8 +19774,9 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="GND95" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND96" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="U$2" library="mp1584S" deviceset="MP1584_V2" device=""/>
-<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="220KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="220k"/>
-<part name="R89" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="40.2K"/>
+<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="220KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="40.2K"/>
+<part name="R89" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="210K"/>
+<part name="GND82" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21188,9 +21189,9 @@ pins to 3.3V.</text>
 <attribute name="NAME" x="643.89" y="285.5214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="643.89" y="290.322" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C29" gate="G$1" x="718.82" y="294.64" smashed="yes">
-<attribute name="NAME" x="719.836" y="295.275" size="1.778" layer="95"/>
-<attribute name="VALUE" x="719.836" y="290.449" size="1.778" layer="96"/>
+<instance part="C29" gate="G$1" x="713.74" y="294.64" smashed="yes">
+<attribute name="NAME" x="714.756" y="295.275" size="1.778" layer="95"/>
+<attribute name="VALUE" x="714.756" y="290.449" size="1.778" layer="96"/>
 </instance>
 <instance part="C74" gate="G$1" x="668.02" y="304.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="667.385" y="305.816" size="1.778" layer="95" rot="R90"/>
@@ -21224,8 +21225,8 @@ pins to 3.3V.</text>
 <attribute name="NAME" x="690.879059375" y="290.828590625" size="1.27046875" layer="95" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="697.235709375" y="290.824290625" size="1.2719" layer="96" ratio="10" rot="R90"/>
 </instance>
-<instance part="GND24" gate="1" x="718.82" y="281.94" smashed="yes">
-<attribute name="VALUE" x="718.82" y="281.686" size="1.778" layer="96" align="top-center"/>
+<instance part="GND24" gate="1" x="713.74" y="281.94" smashed="yes">
+<attribute name="VALUE" x="713.74" y="281.686" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="GND93" gate="1" x="693.42" y="281.94" smashed="yes">
 <attribute name="VALUE" x="693.42" y="281.686" size="1.778" layer="96" align="top-center"/>
@@ -21247,6 +21248,9 @@ pins to 3.3V.</text>
 <instance part="R89" gate="G$1" x="731.52" y="294.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="729.996" y="294.64" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="733.044" y="294.64" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="GND82" gate="1" x="731.52" y="266.7" smashed="yes">
+<attribute name="VALUE" x="731.52" y="266.446" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -22075,7 +22079,7 @@ pins to 3.3V.</text>
 </segment>
 <segment>
 <pinref part="C29" gate="G$1" pin="2"/>
-<wire x1="718.82" y1="289.56" x2="718.82" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="713.74" y1="289.56" x2="713.74" y2="284.48" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -22112,6 +22116,11 @@ pins to 3.3V.</text>
 <pinref part="R91" gate="G$1" pin="1"/>
 <wire x1="657.86" y1="266.7" x2="668.02" y2="266.7" width="0.1524" layer="91"/>
 <label x="668.02" y="269.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="731.52" y1="274.32" x2="731.52" y2="269.24" width="0.1524" layer="91"/>
+<pinref part="GND82" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -22882,10 +22891,10 @@ pins to 3.3V.</text>
 </segment>
 <segment>
 <pinref part="C29" gate="G$1" pin="1"/>
-<wire x1="718.82" y1="304.8" x2="718.82" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="713.74" y1="304.8" x2="713.74" y2="297.18" width="0.1524" layer="91"/>
 <pinref part="L4" gate="G$1" pin="2"/>
-<wire x1="708.66" y1="304.8" x2="718.82" y2="304.8" width="0.1524" layer="91"/>
-<label x="718.82" y="304.8" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="708.66" y1="304.8" x2="713.74" y2="304.8" width="0.1524" layer="91"/>
+<label x="713.74" y="304.8" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <wire x1="731.52" y1="299.72" x2="731.52" y2="304.8" width="0.1524" layer="91"/>
@@ -24900,6 +24909,15 @@ pins to 3.3V.</text>
 <label x="683.26" y="292.1" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="FB"/>
 </segment>
+<segment>
+<wire x1="731.52" y1="289.56" x2="731.52" y2="287.02" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R89" gate="G$1" pin="1"/>
+<wire x1="731.52" y1="287.02" x2="731.52" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="731.52" y1="287.02" x2="728.98" y2="287.02" width="0.1524" layer="91"/>
+<junction x="731.52" y="287.02"/>
+<label x="728.98" y="287.02" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="COMP" class="0">
 <segment>
@@ -24933,13 +24951,6 @@ pins to 3.3V.</text>
 <junction x="640.08" y="266.7"/>
 <pinref part="U$2" gate="G$1" pin="EN"/>
 <label x="632.46" y="353.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<wire x1="731.52" y1="289.56" x2="731.52" y2="284.48" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="R89" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

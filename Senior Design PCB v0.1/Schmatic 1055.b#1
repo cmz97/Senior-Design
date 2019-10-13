@@ -3,7 +3,7 @@
 <eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="20" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -174,8 +174,8 @@
 <text x="90.86341875" y="19.166840625" size="1.016" layer="21" rot="R270">©Chengming Zhang
 2019-9-26-12-42AM</text>
 <text x="-1.27" y="6.35" size="1.016" layer="21" rot="R90">Senior Design
-PCB v0.1 4  Layer
-Group-8 Condiment Exp </text>
+PCB v1.0 4  Layer
+Group-8 Condiment Exp</text>
 <rectangle x1="93.3069" y1="20.7264" x2="93.3577" y2="20.7391" layer="21" rot="R90"/>
 <rectangle x1="93.27515" y1="20.72005" x2="93.36405" y2="20.73275" layer="21" rot="R90"/>
 <rectangle x1="93.24975" y1="20.72005" x2="93.36405" y2="20.73275" layer="21" rot="R90"/>
@@ -7263,9 +7263,12 @@ design rules under a new name.</description>
 <wire x1="53.3860875" y1="48.01" x2="52.8" y2="48.01" width="0.2032" layer="1"/>
 <wire x1="55.7353125" y1="48.6086" x2="54.9577125" y2="47.831" width="0.2032" layer="1"/>
 <wire x1="54.9577125" y1="47.831" x2="53.5650875" y2="47.831" width="0.2032" layer="1"/>
+<via x="23.9414" y="51.261675" extent="1-16" drill="0.35"/>
 <wire x1="5.16" y1="59.3" x2="5.6752" y2="58.7848" width="0.2032" layer="1"/>
 <wire x1="5.6752" y1="58.7848" x2="5.6752" y2="58.57375" width="0.2032" layer="1"/>
 <wire x1="17.25375" y1="57.2848" x2="18.70625" y2="57.2848" width="0.2032" layer="1"/>
+<wire x1="23.9414" y1="52.04965" x2="23.9414" y2="51.261675" width="0.2032" layer="1"/>
+<wire x1="18.70625" y1="57.2848" x2="23.9414" y2="52.04965" width="0.2032" layer="1"/>
 <wire x1="5.6752" y1="58.57375" x2="7.78195" y2="56.467" width="0.2032" layer="1"/>
 <wire x1="7.78195" y1="56.467" x2="16.43595" y2="56.467" width="0.2032" layer="1"/>
 <wire x1="16.43595" y1="56.467" x2="17.25375" y2="57.2848" width="0.2032" layer="1"/>
@@ -7273,12 +7276,9 @@ design rules under a new name.</description>
 <wire x1="44.08505" y1="48.6967" x2="43.62295" y2="48.2346" width="0.2032" layer="2"/>
 <wire x1="43.62295" y1="48.2346" x2="40.36645" y2="48.2346" width="0.2032" layer="2"/>
 <wire x1="48.27075" y1="48.6967" x2="44.08505" y2="48.6967" width="0.2032" layer="2"/>
+<wire x1="23.9414" y1="51.2426" x2="23.9414" y2="51.261675" width="0.2032" layer="2"/>
+<wire x1="23.9414" y1="51.261675" x2="37.339375" y2="51.261675" width="0.1524" layer="2"/>
 <wire x1="37.339375" y1="51.261675" x2="39.90435" y2="48.6967" width="0.1524" layer="2"/>
-<wire x1="24.384" y1="51.60705" x2="24.384" y2="51.308" width="0.2032" layer="1"/>
-<via x="24.384" y="51.308" extent="1-16" drill="0.3048"/>
-<wire x1="24.384" y1="51.308" x2="37.29305" y2="51.308" width="0.2032" layer="2"/>
-<wire x1="37.29305" y1="51.308" x2="37.339375" y2="51.261675" width="0.2032" layer="2"/>
-<wire x1="18.70625" y1="57.2848" x2="24.384" y2="51.60705" width="0.2032" layer="1"/>
 </signal>
 <signal name="TXD0" class="3">
 <contactref element="X2" pad="35"/>
@@ -7391,6 +7391,7 @@ design rules under a new name.</description>
 <wire x1="15.033571875" y1="38.488653125" x2="14.906571875" y2="38.615653125" width="0.1524" layer="15"/>
 <wire x1="14.906571875" y1="38.615653125" x2="11.190746875" y2="38.615653125" width="0.1524" layer="15"/>
 <wire x1="58.80328125" y1="54.7484125" x2="58.80328125" y2="54.18731875" width="0.1524" layer="1"/>
+<wire x1="60.2" y1="56.14513125" x2="60.193434375" y2="56.138565625" width="0.1524" layer="1"/>
 <wire x1="60.193434375" y1="56.138565625" x2="58.80328125" y2="54.7484125" width="0.1524" layer="1"/>
 <wire x1="60.193434375" y1="56.138565625" x2="60.193434375" y2="57.907434375" width="0.1524" layer="1"/>
 <wire x1="60.193434375" y1="57.907434375" x2="60.198" y2="57.912" width="0.1524" layer="1"/>
@@ -8215,7 +8216,7 @@ design rules under a new name.</description>
 <via x="-3.81" y="9.906" extent="1-16" drill="0.381"/>
 <via x="-3.81" y="8.636" extent="1-16" drill="0.381"/>
 <via x="-3.81" y="7.366" extent="1-16" drill="0.381"/>
-<via x="-2.54" y="14.986" extent="1-16" drill="0.381" alwaysstop="yes"/>
+<via x="-2.54" y="14.986" extent="1-16" drill="0.381"/>
 <via x="-2.54" y="13.716" extent="1-16" drill="0.381"/>
 <via x="-2.54" y="12.446" extent="1-16" drill="0.381"/>
 <via x="-2.54" y="11.176" extent="1-16" drill="0.381"/>
