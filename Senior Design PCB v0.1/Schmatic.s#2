@@ -28736,18 +28736,6 @@ pins to 3.3V.</text>
 <pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="BEEP" class="0">
-<segment>
-<wire x1="284.48" y1="83.82" x2="297.18" y2="83.82" width="0.1524" layer="91"/>
-<label x="287.02" y="83.82" size="1.778" layer="95"/>
-<pinref part="X2" gate="G$1" pin="IO2/A2_2"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="-104.14" y1="99.06" x2="-106.68" y2="99.06" width="0.1524" layer="91"/>
-<label x="-106.68" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="OLED_RESET" gate="G$1" pin="P1"/>
@@ -28981,6 +28969,18 @@ pins to 3.3V.</text>
 <junction x="-76.2" y="106.68"/>
 <wire x1="-76.2" y1="106.68" x2="-60.96" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="BEEP" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="-104.14" y1="99.06" x2="-106.68" y2="99.06" width="0.1524" layer="91"/>
+<label x="-106.68" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="284.48" y1="83.82" x2="297.18" y2="83.82" width="0.1524" layer="91"/>
+<label x="287.02" y="83.82" size="1.778" layer="95"/>
+<pinref part="X2" gate="G$1" pin="IO2/A2_2"/>
 </segment>
 </net>
 </nets>
