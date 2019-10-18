@@ -26558,11 +26558,6 @@ pins to 3.3V.</text>
 <pinref part="U2" gate="G$1" pin="CS"/>
 <label x="-53.34" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="U$9" gate="G$1" pin="JST1"/>
-<wire x1="200.66" y1="170.18" x2="205.74" y2="170.18" width="0.1524" layer="91"/>
-<label x="205.74" y="170.18" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="RTS" class="0">
 <segment>

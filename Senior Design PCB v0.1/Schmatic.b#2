@@ -8387,6 +8387,7 @@ design rules under a new name.</description>
 <wire x1="37.719" y1="55.7516" x2="35.4725875" y2="55.7516" width="0.1524" layer="16"/>
 <wire x1="18.114" y1="40.776" x2="20.692" y2="40.776" width="0.1524" layer="1"/>
 <wire x1="20.692" y1="40.776" x2="20.701" y2="40.767" width="0.1524" layer="1"/>
+<wire x1="40.227" y1="57.9844" x2="40.132" y2="57.8894" width="0.1524" layer="16"/>
 <wire x1="18.114" y1="40.776" x2="16.59" y2="42.3" width="0.1524" layer="1"/>
 <wire x1="31.7087" y1="51.9877125" x2="35.4725875" y2="55.7516" width="0.1524" layer="16"/>
 <wire x1="20.701" y1="40.767" x2="20.701" y2="44.9989875" width="0.1524" layer="16"/>
@@ -8398,8 +8399,7 @@ design rules under a new name.</description>
 <wire x1="38.1" y1="56.1326" x2="39.8568" y2="57.8894" width="0.1524" layer="1"/>
 <wire x1="39.8568" y1="57.8894" x2="40.132" y2="57.8894" width="0.1524" layer="1"/>
 <via x="40.132" y="57.8894" extent="1-16" drill="0.35"/>
-<wire x1="40.163" y1="57.9204" x2="40.132" y2="57.8894" width="0.3048" layer="16"/>
-<wire x1="40.163" y1="58.013" x2="40.163" y2="57.9204" width="0.3048" layer="16"/>
+<wire x1="40.227" y1="57.9844" x2="40.163" y2="58.013" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="U5" pad="2"/>
@@ -11730,13 +11730,15 @@ design rules under a new name.</description>
 <approved hash="7,39,8d564eefc3ce3292"/>
 <approved hash="7,39,b57bc4af83f8f8e6"/>
 <approved hash="19,1,bc59b0c4b6faba67"/>
+<approved hash="5,16,6ccfaf720a1a5957"/>
+<approved hash="5,16,9b80dd5d37d47663"/>
 <approved hash="19,1,9e187065de9c21b3"/>
+<approved hash="19,1,fd110f56f56a1ccd"/>
 <approved hash="19,16,befeb8146bf26d18"/>
 <approved hash="19,1,c2966b367b80f23b"/>
 <approved hash="19,16,da953ce681c054d5"/>
 <approved hash="19,16,9f1c9809f1eff6fa"/>
 <approved hash="4,15,d6ee8396bf5bef29"/>
-<approved hash="5,16,d4ccc773d21ae954"/>
 </errors>
 </board>
 </drawing>
